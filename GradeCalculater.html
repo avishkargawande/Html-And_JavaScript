@@ -1,0 +1,40 @@
+<html>
+
+<head>
+    <title>Grade Calculater</title>
+    <script>
+        function submit() {
+            let marks = document.getElementById("marks").value;
+            if (marks > 80 && marks <= 100) {
+                console.log("you have grade A");
+                document.getElementById("result").innerText=`You have "A" Grade`
+            }
+            else if(marks>60 && marks<=80)
+            {
+            console.log("you have grade B");
+            document.getElementById("result").innerText=`You have "B" Grade`
+            }
+            else if(marks>40 && marks<=60)
+            {
+            console.log("you have grade C");
+            document.getElementById("result").innerText=`You have "C" Grade`
+
+            }
+            else if(marks<35)
+            {
+            console.log("you have failed");
+            
+            document.getElementById("result").innerText=`You are failed`
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <label>Enter your marks</label>
+    <input id="marks" type="text" />
+    <button onclick="submit()">submit</button>
+    <div id="result"></div>
+</body>
+
+</html>

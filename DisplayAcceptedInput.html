@@ -1,0 +1,18 @@
+<html>
+<head>
+    <title>Input for javascript</title>
+    <script>
+        function Submit(){
+            let name=document.getElementById("name").value;
+            console.log('name',name);
+            document.getElementById("result").innerText=name;
+        }
+    </script>
+</head>
+<body>
+    <label>Name</label>
+    <input id="name" type="text"/>
+    <button onclick="Submit()">Submit</button>
+    <div id="result"></div>
+</body>
+</html>
