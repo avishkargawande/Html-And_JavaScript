@@ -1,0 +1,25 @@
+<html>
+<head>
+    <title>sum of array</title>
+    <script>
+        function submit(){
+            let input = document.getElementById("number").value;
+            let array = input.split(",");
+            let sum=0;
+            for(let i=0;i<array[i];i++){
+                sum=sum+Number(array[i]);
+            }
+            console.log(sum);
+            document.getElementById("sum").innerText = `sum of numbers=` + sum;
+
+
+        }
+    </script>
+</head>
+<body>
+    <label>enter the number</label>
+    <input id="number" type="text">
+    <button onclick="submit()">submit</button>
+    <div id="sum"></div>
+</body>
+</html>
