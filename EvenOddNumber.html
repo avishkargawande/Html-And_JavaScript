@@ -1,0 +1,28 @@
+
+<html>
+<head>
+    <title>Even Or Odd</title>
+    <script>
+        function submit(){
+            let number = document.getElementById("number").value;
+            if(number % 2==0){
+                console.log("even");
+                document.getElementById("evenodd").innerText=`number is even`
+
+            }
+            else
+            {
+                console.log("odd");
+                document.getElementById("evenodd").innerText=`number is odd`
+
+            }
+        }   
+    </script>
+</head>
+<body>
+    <label>enter the number</label>
+    <input id="number" type="text">
+    <button onclick="submit()">submit</button>
+    <div id="evenodd"></div>
+</body>
+</html>

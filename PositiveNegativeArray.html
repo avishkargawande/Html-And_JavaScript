@@ -1,0 +1,50 @@
+<html>
+
+<head>
+    <title>Positive Negative numbers</title>
+    <script>
+        function submit() {
+            let input = document.getElementById("number").value;
+            let array = input.split(",");
+            let positiveArray = [];
+            let negativeArray = [];
+            let zero = [];
+            for (i = 0; i < array.length; i++) {
+                if (array[i] == 0){
+                    zero.push(array[i])
+                }
+
+                else if (array[i] > 0) {
+                    positiveArray.push(array[i])
+                }
+                else {
+                    negativeArray.push(array[i])
+
+                }
+            }
+            console.log(positiveArray);
+            document.getElementById("Positive").innerText = `numbers is positive` + positiveArray;
+
+            console.log(negativeArray);
+            document.getElementById("Negative").innerText = `numbers is negative` + negativeArray;
+
+            console.log(zero);
+            document.getElementById("zero").innerText = `not define` + zero;
+
+
+        }
+    </script>
+</head>
+
+<body>
+    <label>enter the number</label>
+    <input id="number" type="text">
+    <button onclick="submit()">submit</button>
+    <div id="Positive"></div>
+    <div id="Negative"></div>
+    <div id="zero"></div>
+
+
+</body>
+
+</html>

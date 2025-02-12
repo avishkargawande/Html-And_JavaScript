@@ -1,0 +1,45 @@
+<html>
+
+<head>
+    <title>Even or Odd array</title>
+    <script>
+        function input() {
+            let number = document.getElementById("number").value;
+            let Array = number.split(',');
+            let EvenArray=[];
+            let OddArray=[];
+            for(i=0;i<Array.length;i++){    
+            if(Array[i] % 2 == 0){
+            EvenArray.push(Array[i])
+
+            }
+            else{
+            OddArray.push(Array[i])
+
+            }
+        }
+        {
+        console.log(EvenArray);
+        document.getElementById("even").innerText=`numbers is Even`+EvenArray
+        
+    }
+    {
+        console.log(OddArray);
+            document.getElementById("odd").innerText=`numbers is Odd`+OddArray
+
+        }
+    }
+
+    </script>
+</head>
+
+<body>
+    <label>enter the number</label>
+    <input id="number" type="text">
+    <button onclick="input()">submit</button>
+    <div id="even"></div>
+    <div id="odd"></div>
+
+</body>
+
+</html>

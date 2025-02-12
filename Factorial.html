@@ -1,10 +1,28 @@
 <html>
+
 <head>
-    <title>Document</title>
+    <title>factorial</title>
+    <script>
+        function submit() {
+            let number = document.getElementById("number").value;
+            let fact = 1;
+            for (i = 1; i <= number; i++) {
+                fact =fact*i;
+            }
+            {
+                console.log(fact);
+                document.getElementById("fact").innerText=`factorial is`+fact
+
+            }
+        }
+    </script>
 </head>
+
 <body>
     <label>enter the number</label>
     <input id="number" type="text">
     <button onclick="submit()">submit</button>
+    <div id="fact"></div>
 </body>
+
 </html>
