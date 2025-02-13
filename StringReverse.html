@@ -1,26 +1,24 @@
 <html>
 <head>
-    <title>String Reverse</title>
+    <title>Document</title>
     <script>
-        function submit() {
+        function submit(){
             let input = document.getElementById("number").value;
             let reverse="";
-            for(let i=input.length-1;i>=0;i--){
+            for(let i=input.length-1;i>=0;i--) {
                 reverse=reverse+input[i];
             }
             console.log(reverse);
-            document.getElementById("string").innerText = `string is=` +reverse;
+            document.getElementById("str").innerHTML = `string is=` + reverse;
 
         }
     </script>
 </head>
-
 <body>
-    <label>enter the strings</label>
+    <label>Enter the string</label>
     <input id="number" type="text">
     <button onclick="submit()">submit</button>
-    <div id="string"></div>
+    <div id="str">reverse string is</div>
 
 </body>
-
 </html>
